@@ -7,11 +7,11 @@ layout: default
 |:---------------------------|:---------------------------------------------------------|:-------------------------|:--------------------|:-------------------|
 | Java                       | HTML                                                     | Eclipse                  | Python              | Android Development|
 | C                          | CSS                                                      | XCode                    | Perl                | iOS Development    |             
-| C++                        | LAMP Stack (Linux, Apache, MySQL and PHP/Python/Perl)    | Visual Studio            | Bash                |                    |
+| C++                        | LAMP Stack (Linux, Apache, MySQL and PHP/Python/Perl)    | Visual Studio            | Bash                | MacOS Development  |
 | C#                         | MEAN Stack (MongoDB, ExpressJS, AngularJS, and Node.js)  | Spring Tool Suite        | Ruby                |                    |
-| Objective C                | MeteorJS                                                 | Atom                     |                     |                    |
-| Swift                      | ASP.NET MVC
-| Spring Boot                |
+| Objective C                | MeteorJS                                                 | Atom                     | Markdown            |                    |
+| Swift                      | ASP.NET MVC                                              | Amazon AWS               |                     |                    |
+| Spring Boot                |                                                          | Digital Ocean Servers    |                     |                    |
 
 * * *
 
@@ -63,124 +63,80 @@ Since I was around 11 or 12 years old I have been interested in programming and 
 ## MEIRLBOT
 - Source Code: [GitHub](https://github.com/tmoon8730/meirlbot.git)
 - Description: The MEIRLBOT is a set of Java Spring Boot applications for the purpose of creating and displaying memes. The main reason for creating this project was to learn new technologies and build resumes.
+- Technical Spec: Java Spring Boot Application
+- Code Example:
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+``` java
+@SpringBootApplication
+public class MemeExchangeApplication {
 
-[Link to another page](another-page).
-[Yet another page](yet-another-page).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# [](#header-1)Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## [](#header-2)Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### [](#header-3)Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+  public static void main(String[] args) {
+    SpringApplication.run(MemeExchangeApplication.class, args);
+  }
 }
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+- Screenshot: ![](/assets/images/meirlbot-screenshot.png)
+
+## Nutriments
+- Website: [http://nutrimentsapp.com/](http://nutrimentsapp.com/)
+- Source Code: [GitHub](https://github.com/tmoon8730/FATStats)
+- Description: Nutriments is an iOS Application for simple and quick exercise and supplement tracking
+- Technical Spec: iOS Application developed in Swift
+- Code Example:
+
+``` swift
+func createDrive(managedContext: NSManagedObjectContext, quarter: String, time: String, yardLine: String) -> Bool{
+    let entityDrive = NSEntityDescription.entityForName("DriveEntity", inManagedObjectContext: managedContext)
+    let newDrive = DriveEntity(entity: entityDrive!, insertIntoManagedObjectContext: managedContext)
+    newDrive.quarter = quarter
+    newDrive.time = time
+    newDrive.yardLine = yardLine
+    do{
+        try newDrive.managedObjectContext?.save()
+        print("New drive added: \(newDrive.quarter!) with \(newDrive.time!) left on the \(newDrive.yardLine!) yard line")
+        return true
+    }catch{
+        let saveError = error as NSError
+        print(saveError)
+    }
+    return false
+}
 ```
 
-#### [](#header-4)Header 4
+- Screenshot:
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### [](#header-5)Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### [](#header-6)Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![](https://guides.github.com/activities/hello-world/branching.png)
+![](http://nutrimentsapp.com/img/portfolio/buttonsSupplements.jpg)
 
 
-### Definition lists can be used with HTML syntax.
+## AndroidMultiTool
+- Source Code: [GitHub](https://github.com/tmoon8730/androidmultitool)
+- Description: A Android Application with a slew of different useful tools including:
+  - Alarm Clock
+  - Custom Web Browser
+  - Email App
+  - Present Fortune Teller
+  - A Database Access Object
+- Technical Spec: Java Application developed in Java
+- Code Example:
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+``` java
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_alarm_manager);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+        alarm = new AlarmManagerBroadcastReceiver();
 
-```
-The final element.
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+    }
 ```
