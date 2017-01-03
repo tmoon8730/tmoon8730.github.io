@@ -3,9 +3,9 @@ layout: default
 ---
 # Technical Skills
 
-| Standard Languages         | Web Development                                          |  IDE's and Tools         | Scripting Languages | Mobile Development |
-|:---------------------------|:---------------------------------------------------------|:-------------------------|:--------------------|:-------------------|
-| Java                       | HTML                                                     | Eclipse                  | Python              | Android Development|
+| Standard Languages                                               | Web Development                                          |  IDE's and Tools         | Scripting Languages | Mobile Development |
+|:-----------------------------------------------------------------|:---------------------------------------------------------|:-------------------------|:--------------------|:-------------------|
+| [Java](https://en.wikipedia.org/wiki/Java_(programming_language))| [HTML](http://www.w3schools.com/html/html_intro.asp)     | Eclipse                  | Python              | Android Development|
 | C                          | CSS                                                      | XCode                    | Perl                | iOS Development    |             
 | C++                        | LAMP Stack (Linux, Apache, MySQL and PHP/Python/Perl)    | Visual Studio            | Bash                | MacOS Development  |
 | C#                         | MEAN Stack (MongoDB, ExpressJS, AngularJS, and Node.js)  | Spring Tool Suite        | Ruby                |                    |
@@ -43,6 +43,7 @@ layout: default
 * * *
 
 # Education
+
 ### College
 - University of South Carolina
 - Expected graduation date: Spring 2018
