@@ -22,6 +22,7 @@ layout: default
 - Developed a two factor authentication system
 - Designed and built a web automation framework using C# and Selenium
 - Built a Node.js and MongoDB website for testing bill payment automation systems
+
 ### Center for Digital Humanities: System Administration & Software Development (2016)
 - Responsible for maintaining and backing up development and production servers
 - Implemented source control, virtual private servers, and Docker containers
